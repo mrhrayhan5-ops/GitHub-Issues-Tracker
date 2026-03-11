@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- title & favicon -->
-    <title>GitHub Issues Tracker</title>
+    <title>GitHub Issues Tracker | Login</title>
     <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
 
     <!-- icon -->
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body>    
     <!-- login from -->
     <section class="flex justify-center items-center min-h-screen bg-base-300">
         <fieldset class="fieldset bg-white border-base-300 rounded-box w-xs border p-4">
@@ -40,14 +40,14 @@
                 <p class="text-sm text-gray-500">Sign in to manage your issues</p>
             </div>
             <label class="label font-bold">Username</label>
-            <input type="text" class="input" placeholder="Enter Username" />
+            <input id="input-name" type="text" class="input" placeholder="Enter Username" />
             <p class="text-primary">Default: admin</p>
 
             <label class="label font-bold">Password</label>
-            <input type="password" class="input" placeholder="Enter Password" />
+            <input id="input-password" type="password" class="input" placeholder="Enter Password" />
             <p class="text-primary">Default: admin123</p>
-
-            <button class="btn btn-primary mt-4">Sign In</button>
+            
+            <button id="signin-btn" class="btn btn-primary mt-4">Sign In</button>
 
             <!-- or -->
             <div class="flex items-center my-3">
@@ -72,7 +72,7 @@
 
 
     <!-- script -->
-    <script src="script/index.js"></script>
+    <script src="./script/signin.js"></script>
 </body>
 
 </html>
