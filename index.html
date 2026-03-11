@@ -7,7 +7,12 @@
 
     <!-- title & favicon -->
     <title>GitHub Issues Tracker</title>
-    <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +28,47 @@
 </head>
 
 <body>
-    <h1 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloribus blanditiis veritatis voluptatum
-        corporis nobis reiciendis eum a minima neque ad magnam iste rem ullam, ratione voluptas amet officiis autem?
-        Similique accusantium impedit consectetur, recusandae necessitatibus temporibus maxime eius. Id eaque cum
-        eligendi suscipit doloremque sit ad similique recusandae temporibus!</h1>
+    <!-- login from -->
+    <section class="flex justify-center items-center min-h-screen bg-base-300">
+        <fieldset class="fieldset bg-white border-base-300 rounded-box w-xs border p-4">
+
+            <div class="flex flex-col items-center text-center mb-6">
+                <div class="mb-4">
+                    <img src="./assets/github-logo.png" alt="">
+                </div>
+                <h1 class="text-2xl font-medium">GitHub Issues Tracker</h1>
+                <p class="text-sm text-gray-500">Sign in to manage your issues</p>
+            </div>
+            <label class="label font-bold">Username</label>
+            <input type="text" class="input" placeholder="Enter Username" />
+            <p class="text-primary">Default: admin</p>
+
+            <label class="label font-bold">Password</label>
+            <input type="password" class="input" placeholder="Enter Password" />
+            <p class="text-primary">Default: admin123</p>
+
+            <button class="btn btn-primary mt-4">Sign In</button>
+
+            <!-- or -->
+            <div class="flex items-center my-3">
+                <hr class="flex-grow border-1 border-gray-300" />
+                <span class="px-4 text-gray-500">OR</span>
+                <hr class="flex-grow border-1 border-gray-300" />
+            </div>
+
+            <!-- Demo Credentials -->
+            <div class="text-center ">
+                <p class="text-gray-500 mb-2">Demo Credentials:</p>
+                <div class="bg-sky-100 rounded-md p-1 text-lg">
+                    <p>Username: admin</p>
+                    <P>Password: admin123</P>
+                </div>
+            </div>
+
+        </fieldset>
+
+    </section>
+
 
 
     <!-- script -->
